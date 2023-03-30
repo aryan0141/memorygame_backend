@@ -28,7 +28,7 @@ app.get("/", (req, res) => res.send("App is running! (Index Page)"));
 
 // API Routes
 app.use("/auth", require("./routes/auth"));
-app.use("/leaderboard", require("./routes/Leaderboard"));
+app.use("/leaderboard", require("./routes/leaderboard"));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
